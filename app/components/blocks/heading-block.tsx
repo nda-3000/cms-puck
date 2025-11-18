@@ -5,14 +5,10 @@ type Props = PuckProps['HeadingBlock'];
 
 export const HeadingBlock: ComponentConfig<Props> = {
   fields: {
-    title: { type: 'text' },
+    title: { type: 'text', contentEditable: true },
   },
   defaultProps: {
     title: 'Heading',
   },
-  render: ({ title }: Props) => (
-    <div style={{ padding: 64 }}>
-      <h1 className="text-2xl font-bold">{title}</h1>
-    </div>
-  ),
+  render: ({ title }: Props) => <h1 className="p-16 text-center text-2xl font-bold">{title}</h1>,
 };
