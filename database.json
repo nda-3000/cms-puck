@@ -1,1 +1,141 @@
-{"/":{"root":{"props":{"title":"Puck + React Router 7 demo"}},"content":[{"type":"HeadingBlock","props":{"title":"Edit this page by adding /edit to the end of the URL","id":"HeadingBlock-1694032984497"}},{"type":"TextBlock","props":{"content":"<p>Your text goes <strong>here</strong>...</p>","id":"TextBlock-4bd90093-e7f7-446c-a61d-f7d0ce739e0c"}},{"type":"ButtonBlock","props":{"label":"Button Label","url":"https://example.com","variant":"default","id":"ButtonBlock-56e18e39-19e2-4f29-a9cf-87d7c8a55cdb"}},{"type":"ButtonBlock","props":{"label":"Button Label","url":"https://example.com","variant":"secondary","id":"ButtonBlock-44fd0ded-16aa-459f-ade5-a0375d49fac2"}},{"type":"GridBlock","props":{"items":[{"type":"HeadingBlock","props":{"title":"Heading","id":"HeadingBlock-800bd0a7-9638-479e-b418-a3daa2ca5fcb"}},{"type":"HeadingBlock","props":{"title":"Heading","id":"HeadingBlock-d3b42359-33ad-4c0b-b4cc-a1d9daefa3f1"}}],"columns":3,"gap":16,"id":"GridBlock-9b3ae73a-44bd-4bdb-b61a-03eff5264e41"}}],"zones":{}},"/home-page":{"root":{"props":{"title":"home page"}},"content":[{"type":"HeadingBlock","props":{"title":"Heading title","id":"HeadingBlock-0af8d126-369c-48cd-8c4d-cc641d75ec77"}},{"type":"GridBlock","props":{"columns":3,"gap":16,"id":"GridBlock-5418b986-de5e-48e5-bbbe-3a173d9278d9"}},{"type":"ButtonBlock","props":{"label":"Button Label","url":"https://example.com","variant":"ghost","id":"ButtonBlock-701acfb4-7e41-4472-a3ef-44cef7aa830b"}}],"zones":{"GridBlock-5418b986-de5e-48e5-bbbe-3a173d9278d9:grid":[{"type":"CardBlock","props":{"title":"Card Title","description":"This is a description of the card.","padding":60,"variant":"shadow-lg rounded-md","id":"CardBlock-0a7d4e4e-d3dc-4cf2-8de5-f90e3d1a15ee"}},{"type":"CardBlock","props":{"title":"Card Title","description":"This is a description of the card.","padding":16,"variant":"border rounded-md","id":"CardBlock-c5b81718-97e0-471d-9a47-b8d3f53c252f"}},{"type":"CardBlock","props":{"title":"Card Title","description":"This is a description of the card.","padding":16,"variant":"border rounded-md","id":"CardBlock-1bdf1b64-db56-4424-989b-296dbc120ad1"}}],"CardBlock-0a7d4e4e-d3dc-4cf2-8de5-f90e3d1a15ee:card-content":[],"CardBlock-c5b81718-97e0-471d-9a47-b8d3f53c252f:card-content":[],"CardBlock-1bdf1b64-db56-4424-989b-296dbc120ad1:card-content":[]}},"/test3":{"root":{"props":{"title":"page title","description":"seo description"}},"content":[{"type":"HeadingBlock","props":{"title":"Heading","id":"HeadingBlock-88c3138f-848d-433a-95ba-b719ef80c15d"}},{"type":"CardBlock","props":{"children":[{"type":"HeadingBlock","props":{"id":"HeadingBlock-33681a5c-87d7-4acb-b657-a721fcfb28bb","title":"Nested Heading"}}],"title":"Card Title","description":"This is a description of the card.","padding":16,"variant":"border rounded-md","id":"CardBlock-66bfdc6d-c220-4044-aea4-f97fbf7f32f2"}}],"zones":{}}}
+{
+  "/": {
+    "root": { "props": { "title": "Home Page" } },
+    "content": [
+      {
+        "type": "HeadingBlock",
+        "props": { "title": "Heading fsdfsd", "id": "HeadingBlock-5d750d2b-c9ad-410d-9d7a-55f385922c7a" }
+      },
+      {
+        "type": "GridBlock",
+        "props": {
+          "children": [
+            {
+              "type": "HeadingBlock",
+              "props": { "id": "HeadingBlock-02b0dbf1-1a62-4a4e-9111-c645c6e3d46a", "title": "Heading" }
+            },
+            {
+              "type": "ImageBlock",
+              "props": {
+                "src": "https://picsum.photos/600/400",
+                "alt": "Placeholder Image",
+                "width": 600,
+                "height": 400,
+                "caption": "",
+                "link": "",
+                "layout": "responsive",
+                "id": "ImageBlock-dcab3f5e-798b-4da4-b31f-3d3d91a70705"
+              }
+            },
+            {
+              "type": "CardBlock",
+              "props": {
+                "children": [
+                  {
+                    "type": "ImageBlock",
+                    "props": {
+                      "id": "ImageBlock-c232e353-d3ad-40f6-80d1-025ff8cb73b7",
+                      "src": "https://picsum.photos/600/400",
+                      "alt": "Placeholder Image",
+                      "width": 600,
+                      "height": 400,
+                      "caption": "",
+                      "link": "",
+                      "layout": "responsive"
+                    }
+                  },
+                  {
+                    "type": "ButtonBlock",
+                    "props": {
+                      "id": "ButtonBlock-0c850073-c46c-497a-8ed3-e504c5aff683",
+                      "label": "Button Label",
+                      "url": "https://example.com",
+                      "variant": "default"
+                    }
+                  }
+                ],
+                "id": "CardBlock-9c7aa64e-c4b5-4580-ad4a-3a90847238d5",
+                "title": "Card Title",
+                "description": "This is a description of the card.",
+                "padding": 16,
+                "variant": "border rounded-md"
+              }
+            }
+          ],
+          "columns": 2,
+          "gap": 16,
+          "id": "GridBlock-701edc62-6ba9-477e-a146-7412273f6370"
+        }
+      }
+    ],
+    "zones": {}
+  },
+  "/page1": {
+    "root": { "props": { "title": "" } },
+    "content": [
+      {
+        "type": "HeadingBlock",
+        "props": { "title": "Hdfd d feading", "id": "HeadingBlock-175e5538-cf89-4713-8c0c-2125f1013593" }
+      },
+      {
+        "type": "ImageBlock",
+        "props": {
+          "src": "https://picsum.photos/600/400",
+          "alt": "Placeholder Image",
+          "width": 600,
+          "height": 400,
+          "caption": "",
+          "link": "",
+          "layout": "responsive",
+          "id": "ImageBlock-2649b29f-b398-4f49-96bd-6335e3039f4d"
+        }
+      },
+      {
+        "type": "CardBlock",
+        "props": {
+          "children": [
+            {
+              "type": "ButtonBlock",
+              "props": {
+                "label": "Button Label",
+                "url": "https://example.com",
+                "variant": "default",
+                "id": "ButtonBlock-48148902-b124-4ece-aaad-df7592e528b7"
+              }
+            }
+          ],
+          "title": "Card Title",
+          "description": "This is a description of the card.",
+          "padding": 16,
+          "variant": "border rounded-md",
+          "id": "CardBlock-e75ae876-2b02-44e3-9d7f-8088268339d0"
+        }
+      }
+    ],
+    "zones": {}
+  },
+  "/page1/team/member1": {
+    "root": { "props": { "title": "" } },
+    "content": [
+      { "type": "Container", "props": { "children": [], "id": "Container-614c3b5d-0fc9-47de-8016-a0ce67046635" } },
+      {
+        "type": "GridBlock",
+        "props": { "children": [], "columns": 3, "gap": 19, "id": "GridBlock-fbb0ffec-f6f5-4793-b50c-b86acf9389f2" }
+      },
+      {
+        "type": "ImageBlock",
+        "props": {
+          "src": "https://picsum.photos/600/400",
+          "alt": "Placeholder Image",
+          "width": 599,
+          "height": 400,
+          "caption": "bmbv",
+          "link": "",
+          "layout": "intrinsic",
+          "id": "ImageBlock-8a76f094-c20d-4db5-aa88-615e823fa007"
+        }
+      }
+    ],
+    "zones": {}
+  }
+}
