@@ -8,5 +8,15 @@ export type PuckProps = {
   CardBlock: { title: string; description: string; padding: number; variant: string; children?: Slot };
   ButtonBlock: { label: string; url: string; variant: ButtonVariant };
   Container: { children: Slot };
+  ImageBlock: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    caption?: string;
+    link?: string;
+    layout?: 'responsive' | 'fixed' | 'intrinsic';
+  };
+  ColumnsBlock: {};
   //   RichTextBlock: PuckRichTextProps;
 };

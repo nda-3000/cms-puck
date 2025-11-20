@@ -72,7 +72,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 text-sm md:flex-row">
-          <p>&copy; 2024 Brand Inc. All rights reserved.</p>
+          <p>&copy; 2025 Brand Inc. All rights reserved.</p>
           <div className="flex gap-4">
             {/* Social placeholders */}
             <div className="h-5 w-5 rounded-full bg-slate-700"></div>

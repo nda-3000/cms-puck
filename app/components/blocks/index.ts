@@ -4,6 +4,8 @@ import { HeadingBlock } from './heading-block';
 import { ButtonBlock } from './button-block';
 import { RichTextBlock } from './rich-text-block';
 import { Container } from './container';
+import { ImageBlock } from './image-block';
+import { ColumnsBlock } from './columns-block';
 
 export const components = {
   HeadingBlock,
@@ -11,5 +13,7 @@ export const components = {
   CardBlock,
   ButtonBlock,
   Container,
+  ImageBlock,
+  ColumnsBlock,
   //   RichTextBlock,
 };
