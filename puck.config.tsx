@@ -13,6 +13,10 @@ export const config: Config<PuckProps, RootProps> = {
     ...components,
     // RichTextBlock: PuckRichText,
   },
+  categories: {
+    typography: { components: ['HeadingBlock', 'ButtonBlock'], title: 'Typography' },
+    layout: { components: ['GridBlock', 'ColumnsBlock'], title: 'Layout' },
+  },
   root: {
     fields: {
       title: { type: 'text', label: 'Title' },
