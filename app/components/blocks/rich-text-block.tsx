@@ -1,5 +1,31 @@
 import type { ComponentConfig } from '@measured/puck';
-import type { PuckProps } from 'types';
-import { PuckRichText } from "@tohuhono/puck-rich-text"
+import { useEditor, EditorContent } from '@tiptap/react';
+import StarterKit from '@tiptap/starter-kit';
 
-export const RichTextBlock: ComponentConfig<PuckProps['RichTextBlock']> = PuckRichText;
+export const RichTipTap: ComponentConfig<any> = {
+  label: 'Rich Text (TipTap)',
+
+  fields: {
+    content: { type: 'textarea', label: 'HTML', contentEditable: false },
+  },
+
+  defaultProps: {
+    content: '<p>Hello world</p>',
+  },
+
+  render: ({ content, puck }) => {
+    const editor = useEditor({
+      extensions: [StarterKit],
+      content,
+      onUpdate({ editor }) {
+        puck.setProp('content', editor.getHTML());
+      },
+    });
+
+    return (
+      <div className="prose max-w-none">
+        <EditorContent editor={editor} />
+      </div>
+    );
+  },
+};
